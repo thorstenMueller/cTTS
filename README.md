@@ -1,3 +1,9 @@
+![Maintaner](https://img.shields.io/badge/maintainer-Thorsten_Mueller-blue)
+<a href="https://twitter.com/intent/follow?screen_name=ThorstenVoice">
+        <img src="https://img.shields.io/twitter/follow/ThorstenVoice?style=social&logo=twitter"
+            alt="follow on Twitter"></a>
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+
 # cTTS
 A super simple Python module for synthesizing voice using a Coqui TTS server.
 
