@@ -6,6 +6,13 @@ __version__ = '0.0.1'
 
 # This module will not do any text cleaning (numbers, dates, ...)!
 
+# Ideas for following versions:
+# =============================
+# Adding a function returning raw audio data instead saving to disk directly
+# Adding librosa to offer functions for
+# - getting samplerate
+# - getting audio length
+
 VALID_END_OF_PHRASE = ['.',';','!','?']
 
 def prepareText(text,addStopChar):
@@ -23,10 +30,11 @@ def prepareText(text,addStopChar):
         text = text + "."
     return text
 
-def synthesize(filename, text, url="http://localhost:5002", addStopChar=True):
-    """Synthesize a text (no additional text cleaning!) using a given Coqui TTS server connection.
+def synthesizeToFile(filename, text, url="http://localhost:5002", addStopChar=True):
+    """Synthesize a text (no additional text cleaning!) using a Coqui TTS server.
 
     Args:
+        filename (string): Path, filename and .wav extension where synthesized voice will be saved. 
         text (string): Text to be synthesized.
         url (string): URL of Coqui TTS server (default: http://localhost:5002)
         addStopChar (boolean): If true a dot will be added as last char if
