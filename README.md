@@ -20,6 +20,8 @@ from ctts import cTTS
 cTTS.synthesizeToFile("output.wav", "This is a test.")
 ```
 
+ Short video on how to use it: [Watch me](https://www.youtube.com/watch?v=hRoPIKRkERw)
+
 ### Arguments
 * filename: Path, filename, .wav suffix of output file with synthesized voice.
 * text: Text to be synthesized.
