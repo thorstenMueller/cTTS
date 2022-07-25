@@ -50,9 +50,10 @@ def synthesizeToFile(filename, text, url="http://localhost:5002", addStopChar=Tr
 
     try:
         req = requests.get(url + "/api/tts", params={'text': prepareText(text, addStopChar)})
-    except Exception() as e:
+    except Exception as e:
         logging.error("Error calling Coqui TTS server api")
         print(e)
+        return False
     
     if req.status_code == 200 and req.headers['Content-Type'] == 'audio/wav':
         logging.info("Valid audio has been returned from Coqui TTS api.")
