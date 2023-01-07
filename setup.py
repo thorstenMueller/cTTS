@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cTTS",
-    version="0.0.2",
+    version="0.0.3",
     author="Thorsten Müller",
     author_email="tm@thorsten-voice.de",
     packages=["cTTS"],

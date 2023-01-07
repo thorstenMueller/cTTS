@@ -15,7 +15,7 @@ First install module with `pip install cTTS`.
 
 Run a simple Python code like this:
 ```python
-from ctts import cTTS
+import cTTS
 
 cTTS.synthesizeToFile("output.wav", "This is a test.")
 ```
