@@ -2,7 +2,7 @@ import requests
 import json
 import logging
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 # This module will not do any text cleaning (numbers, dates, ...)!
 
